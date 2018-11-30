@@ -91,4 +91,7 @@ abs(x)
 
 # Notes
 * Functions and Procedures do not accept arrays, you have to manually define a new type of array e.g.: `type pole = array[1..20] of integer;` and then pass it to a function like: `function shiftLeft (arr: pole; size: integer): pole;`
-* Functions use variables of the same name as their name so `function shiftLeft` will return like `shiftLeft := <return-value>;`
+* Functions use variables of the same name as their name so `function shiftLeft` will return like `shiftLeft := <return-value>;
+
+# Error codes
+* `201` - array out of bounds
