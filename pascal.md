@@ -89,6 +89,16 @@ sqrt(x)
 abs(x)
 ```
 
+## String functions
+```pascal
+str(int, str);
+val(str, int, err);  // err is an index of first character that can not be converted to integer
+copy(str, index, count);
+delete(str, index, count);
+pos(str_to_match, str);
+insert(str_to_insert, str, index);
+```
+
 # Notes
 * Functions and Procedures do not accept arrays, you have to manually define a new type of array e.g.: `type pole = array[1..20] of integer;` and then pass it to a function like: `function shiftLeft (arr: pole; size: integer): pole;`
 * Functions use variables of the same name as their name so `function shiftLeft` will return like `shiftLeft := <return-value>;
