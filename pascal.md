@@ -92,7 +92,7 @@ abs(x)
 ## String functions
 ```pascal
 str(int, str);
-val(str, int, err);  // err is an index of first character that can not be converted to integer
+val(str, int[, err]);  // err is an index of first character that can not be converted to integer
 copy(str, index, count);
 delete(str, index, count);
 pos(str_to_match, str);
