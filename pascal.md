@@ -80,6 +80,12 @@ int64
 array   // <array_name>: array[<from x>..<to y>] of <datatype>
 ```
 
+### Arrays
+```pascal
+var arr: array[1 .. 5] of integer;
+var 2dArr: array[1 .. 5, 1 .. 10] of integer    // 2d array with 5 rows and 10 columns
+```
+
 ## Number functions
 ```pascal
 div(x)
@@ -97,6 +103,37 @@ copy(str, index, count);
 delete(str, index, count);
 pos(str_to_match, str);
 insert(str_to_insert, str, index);
+```
+
+## File IO
+```pascal
+    // Datatype to represent text file
+var: f: text;
+     c: char;
+
+    // Bind file to a text variable
+    assign(f, 'file.txt');
+
+    // Read only
+    // Set cursor to the beginning of the file
+    reset(f);
+    // Write only
+    // Wipes the file and writes to it
+    rewrite(f);
+    // Write only
+    // Writes to the ond of the file
+    append(f);
+    // Close file
+    close(f);
+
+    // Returns true if f is at the end of file
+    eof(f);
+    // Returns true if f is at the end of line
+    eoln(f);
+
+    // Read one character from file
+    read(f, c);
+
 ```
 
 # Notes

@@ -13,7 +13,7 @@ begin
         writeln('Invalid input!');
         exit;
     end;
-    
+
     // 0 = LEFT, 1 = RIGHT
     for i := 1 to n do begin
         arr1[i] := random(2);
