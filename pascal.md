@@ -43,8 +43,8 @@ For i:= <initial value> To / DownTo <end value (included)> Do <command> or Begin
 While <condition> Do Begin <code> End;
 Repeat <code> Until <condition>;
 
-Procedure <name> (<args>); Var <vars>; Begin <code> End;
-Function <name> (<args>) :<return type>; Var <vars>;  Begin <code> End;
+Procedure <name> (<args_by_copy>; <var args_by_refference>); Var <vars>; Begin <code> End;
+Function <name> (<args_by_copy>; <var args_by_refference>) :<return type>; Var <vars>;  Begin <code> End;
 ```
 ## Comments
 ```pascal
@@ -98,6 +98,7 @@ abs(x)
 ## String functions
 ```pascal
 str(int, str);
+length(s);
 val(str, int[, err]);  // err is an index of first character that can not be converted to integer
 copy(str, index, count);
 delete(str, index, count);
