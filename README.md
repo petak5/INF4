@@ -15,7 +15,7 @@ End.
 ```pascal
 Program <name>;
 Uses Graph, <another libs>;
-Var gd, gm :Integer;
+Var gd, gm: Integer;
     <another vars>;
 
 Begin
