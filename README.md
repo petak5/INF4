@@ -2,8 +2,8 @@
 ```pascal
 Program <name>;
 Uses <libs>;
-Var <vars>;
-    <another vars>;
+Var <vars>: <data_type>;
+    <another vars>: <data_type>;
 
 Begin
     <code>
