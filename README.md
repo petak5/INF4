@@ -45,6 +45,10 @@ Repeat <code> Until <condition>;
 
 Procedure <name> (<args_by_copy>; <var args_by_refference>); Var <vars>; Begin <code> End;
 Function <name> (<args_by_copy>; <var args_by_refference>) :<return type>; Var <vars>;  Begin <code> End;
+
+// WARNIG!!! - pass by reference vs pass by value
+function fun(var x, y: integer);    // the variables are passed by "reference" -> can alter the arguments' values
+function fun(x, y: integer);        // the variables are passed by "value" -> can not alter the arguments' values
 ```
 ## Comments
 ```pascal
