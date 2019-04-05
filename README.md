@@ -39,6 +39,14 @@ Rectangle(x1, y1, x2, y2);
 ```pascal
 { <code> } is Begin ... End. or Begin ... End; in pascal
 If <condition> Then <command> or Begin <commands> End;
+
+// Switch statement
+Case <var> of
+    'A': <do-stuff>;
+    1..10: <do-stuff>;
+Else <command>
+End;
+
 For i:= <initial value> To / DownTo <end value (included)> Do <command> or Begin <command> End;
 While <condition> Do Begin <code> End;
 Repeat <code> Until <condition>;
